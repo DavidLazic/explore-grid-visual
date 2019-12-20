@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "David Lazic",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "yarn parcel index.html"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "parcel": "^2.0.0-alpha.3.2",
+    "sass": "^1.23.7"
+  },
+  "dependencies": {
+    "three": "^0.111.0"
+  }
+}
