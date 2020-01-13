@@ -15,7 +15,7 @@ export class Audio {
     this.url = url;
     this.camera = camera;
 
-    this.init();
+    return this.url && this.init();
   }
 
   init () {
@@ -60,9 +60,14 @@ export class Audio {
     return this;
   }
 
+  setUrl = url => {
+    this.url = url;
+    this.init();
+  }
+
   play = () => this.sound.play()
 
   freq = () => this.analyser.getAverageFrequency()
 
-  data = () => this.analyser.getFrequencyData()
+  data = () => this.analyser ? this.analyser.getFrequencyData() : []
 }

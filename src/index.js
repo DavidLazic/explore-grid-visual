@@ -27,10 +27,7 @@ if (DEBUG) {
   scene.add(gridHelper);
 }
 
-const audio = new Audio({
-  url: 'https://raw.githubusercontent.com/DavidLazic/audio-visualizer/gh-pages/audio/Galimatias%20%26%20Joppe%20-%20Mintaka.mp4',
-  camera
-});
+const audio = new Audio({ camera });
 
 const grid = new Grid({
   scene,
@@ -43,3 +40,10 @@ grid.center();
 document.body.appendChild(renderer.domElement);
 
 grid.animate()();
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('click', () => {
+    audio.setUrl('https://raw.githubusercontent.com/DavidLazic/audio-visualizer/gh-pages/audio/Galimatias%20%26%20Joppe%20-%20Mintaka.mp4');
+  });
+});
+
