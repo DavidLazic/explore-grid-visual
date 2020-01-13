@@ -1,1 +1,0 @@
-{"version":3,"sources":["src/styles.scss"],"names":[],"mappings":"AAAA,UACE,QAAA,CACA,SAAA,CACA,UAAA,CACA","file":"styles.abe60eb4.css","sourceRoot":"..","sourcesContent":["html, body {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n}"]}
