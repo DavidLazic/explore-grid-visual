@@ -17,6 +17,6 @@ export const GRID_WIDTH = GRID_COLUMNS * (PRISM_GUTTER + PRISM_SIDE);
 export const GRID_ROW_HEIGHT = 256 / GRID_ROWS;
 
 export const AUDIO_LOOP = false;
-export const AUDIO_VOLUME = 0.05;
+export const AUDIO_VOLUME = 0.5;
 export const AUDIO_AUTOPLAY = true;
 export const AUDIO_FFT_SIZE = 2048;
