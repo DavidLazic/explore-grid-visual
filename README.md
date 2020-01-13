@@ -1,6 +1,6 @@
 # Grid Visual
 
-An exploration project of creating audio visualizer with ThreeJS 
+An exploration project of creating audio visualizer with ThreeJS.
 
 [Live preview](https://davidlazic.github.io/explore-grid-visual/index.html)
 
