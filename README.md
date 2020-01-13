@@ -2,7 +2,7 @@
 
 An exploration project of creating audio visualizer with ThreeJS 
 
-[Live preview]()
+[Live preview](https://davidlazic.github.io/explore-grid-visual/)
 
 ### Development
 
