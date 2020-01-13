@@ -62,5 +62,7 @@ export class Audio {
 
   play = () => this.sound.play()
 
+  freq = () => this.analyser.getAverageFrequency()
+
   data = () => this.analyser.getFrequencyData()
 }

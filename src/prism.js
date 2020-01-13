@@ -66,7 +66,6 @@ export class Prism {
 
   static toState = val => {
     const vector = (val % 360 + 360) % 360;
-    // console.log('VAL', val, vector);
 
     switch (true) {
       case (vector >= 120 && vector < 240):
@@ -81,6 +80,8 @@ export class Prism {
   constructor ({ x, y }) {
     this.mesh = PRISM_MESH.clone();
     this.step = PRISM_SPEED + x / PRISM_STEP_X + y / PRISM_STEP_Y;
+    this.x = x;
+    this.y = y;
     this.state = {
       next: 1
     };

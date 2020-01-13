@@ -67,14 +67,12 @@ export class Grid {
     const values = [ ...data.slice(0, GRID_COLUMNS) ];
 
     const map = values.map((val, i) => {
-      const height = Math.ceil(val / GRID_ROW_HEIGHT);
+      const height = Math.ceil((val / GRID_ROW_HEIGHT));
 
       return this.matrix[i].map((item, j) =>
         item.next(j <= height, frame)
       );
     });
-
-    console.log('map', map.flat());
   }
 
   animate = (frame = 0) => () => {
@@ -83,7 +81,7 @@ export class Grid {
     );
 
     if (!animation.flat().every(done => !!done)) {
-      requestAnimationFrame(this.animate(frame + 1));
+      requestAnimationFrame(this.animate(frame));
     } else {
       setTimeout(() => {
         this.next(frame + 1)();

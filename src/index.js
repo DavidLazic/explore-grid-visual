@@ -7,7 +7,6 @@ import {
 } from './defaults';
 import { Grid } from './grid';
 import { Audio } from './audio';
-const mp3 = require('../test/bensound-jazzyfrenchy.mp3'); 
 
 function fov () {
   const ratio = window.innerWidth / window.innerHeight;
