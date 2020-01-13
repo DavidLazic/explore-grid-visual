@@ -6,11 +6,13 @@
   "private": true,
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "yarn clean && parcel build index.html --public-url https://davidlazic.github.io/explore-grid-visual",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.0",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "parcel": "^2.0.0-alpha.3.2",
+    "parcel": "^1.9.7",
     "sass": "^1.23.7"
   },
   "dependencies": {
